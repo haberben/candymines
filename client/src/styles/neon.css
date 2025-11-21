@@ -1,0 +1,176 @@
+/* Neon Box Styles */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes intense-pulse {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.6),
+                0 0 40px rgba(236, 72, 153, 0.4),
+                inset 0 0 20px rgba(168, 85, 247, 0.3);
+    transform: scale(1);
+  }
+  50% { 
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.8),
+                0 0 60px rgba(236, 72, 153, 0.6),
+                inset 0 0 30px rgba(168, 85, 247, 0.5);
+    transform: scale(1.02);
+  }
+}
+
+.neon-box-hidden {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.3) 0%, rgba(236, 72, 153, 0.3) 100%);
+  border: 2px solid rgba(167, 139, 250, 0.6);
+  box-shadow: 
+    0 0 10px rgba(167, 139, 250, 0.5),
+    0 0 20px rgba(167, 139, 250, 0.3),
+    inset 0 0 20px rgba(167, 139, 250, 0.1);
+  backdrop-filter: blur(10px);
+  /* Animasyon kaldırıldı - performans optimizasyonu */
+}
+
+.neon-box-hidden:hover {
+  border-color: rgba(167, 139, 250, 1);
+  box-shadow: 
+    0 0 15px rgba(167, 139, 250, 0.8),
+    0 0 30px rgba(167, 139, 250, 0.5),
+    0 0 45px rgba(167, 139, 250, 0.3),
+    inset 0 0 30px rgba(167, 139, 250, 0.2);
+  /* Hover animasyonu kaldırıldı - performans optimizasyonu */
+}
+
+.neon-box-revealed {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(52, 211, 153, 0.2) 100%);
+  border: 2px solid rgba(52, 211, 153, 0.8);
+  box-shadow: 
+    0 0 15px rgba(52, 211, 153, 0.6),
+    0 0 30px rgba(52, 211, 153, 0.4),
+    inset 0 0 25px rgba(52, 211, 153, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.neon-box-mine {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.3) 0%, rgba(220, 38, 38, 0.3) 100%);
+  border: 2px solid rgba(248, 113, 113, 0.9);
+  box-shadow: 
+    0 0 20px rgba(248, 113, 113, 0.8),
+    0 0 40px rgba(248, 113, 113, 0.5),
+    0 0 60px rgba(248, 113, 113, 0.3),
+    inset 0 0 30px rgba(248, 113, 113, 0.2);
+  /* Pulse animasyonu kaldırıldı - performans optimizasyonu */
+  backdrop-filter: blur(8px);
+}
+
+.neon-box-disabled {
+  background: rgba(17, 24, 39, 0.3);
+  border: 1px solid rgba(75, 85, 99, 0.3);
+  box-shadow: none;
+  backdrop-filter: blur(5px);
+}
+
+/* Neon Text */
+.neon-text-purple {
+  color: #a78bfa;
+  text-shadow: 
+    0 0 10px rgba(167, 139, 250, 0.8),
+    0 0 20px rgba(167, 139, 250, 0.6),
+    0 0 30px rgba(167, 139, 250, 0.4),
+    0 0 40px rgba(167, 139, 250, 0.2);
+}
+
+/* Neon Badge */
+.neon-badge-gold {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.9) 0%, rgba(245, 158, 11, 0.9) 100%);
+  color: #000;
+  border: 2px solid rgba(252, 211, 77, 1);
+  box-shadow: 
+    0 0 10px rgba(252, 211, 77, 0.8),
+    0 0 20px rgba(252, 211, 77, 0.5),
+    0 0 30px rgba(252, 211, 77, 0.3);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Neon Icon */
+.neon-icon-red {
+  filter: drop-shadow(0 0 10px rgba(248, 113, 113, 0.8))
+          drop-shadow(0 0 20px rgba(248, 113, 113, 0.6))
+          drop-shadow(0 0 30px rgba(248, 113, 113, 0.4));
+}
+
+/* Hover Overlay */
+.neon-hover-overlay {
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.neon-box-hidden:hover .neon-hover-overlay {
+  opacity: 1;
+}
+
+/* Animations */
+@keyframes neon-pulse {
+  0%, 100% {
+    box-shadow: 
+      0 0 15px rgba(167, 139, 250, 0.8),
+      0 0 30px rgba(167, 139, 250, 0.5),
+      0 0 45px rgba(167, 139, 250, 0.3),
+      inset 0 0 30px rgba(167, 139, 250, 0.2);
+  }
+  50% {
+    box-shadow: 
+      0 0 20px rgba(167, 139, 250, 1),
+      0 0 40px rgba(167, 139, 250, 0.7),
+      0 0 60px rgba(167, 139, 250, 0.5),
+      inset 0 0 40px rgba(167, 139, 250, 0.3);
+  }
+}
+
+@keyframes neon-pulse-red {
+  0%, 100% {
+    box-shadow: 
+      0 0 20px rgba(248, 113, 113, 0.8),
+      0 0 40px rgba(248, 113, 113, 0.5),
+      0 0 60px rgba(248, 113, 113, 0.3),
+      inset 0 0 30px rgba(248, 113, 113, 0.2);
+  }
+  50% {
+    box-shadow: 
+      0 0 30px rgba(248, 113, 113, 1),
+      0 0 60px rgba(248, 113, 113, 0.7),
+      0 0 90px rgba(248, 113, 113, 0.5),
+      inset 0 0 50px rgba(248, 113, 113, 0.3);
+  }
+}
+
+/* Neon Border Animation */
+@keyframes scale-in {
+  0% {
+    transform: scale(0) rotate(-180deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes neon-border-flow {
+  0% {
+    border-color: rgba(167, 139, 250, 0.6);
+  }
+  50% {
+    border-color: rgba(236, 72, 153, 0.8);
+  }
+  100% {
+    border-color: rgba(167, 139, 250, 0.6);
+  }
+}
+
+.neon-border-animate {
+  animation: neon-border-flow 3s ease-in-out infinite;
+}
