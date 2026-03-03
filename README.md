@@ -181,4 +181,4 @@ Bu proje "Sweet Bonanza" ve "Candy Crush" estetiğinden esinlenmiştir ancak öz
 
 ---
 
-**Manus AI** tarafından oluşturuldu 🎨✨
+**haberben** tarafından oluşturuldu 🎨✨
